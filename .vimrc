@@ -2,22 +2,23 @@ set nocompatible              " required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Yggdroot/indentLine'
-Plugin 'tell-k/vim-autopep8'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Valloric/YouCompleteMe'
+Bundle 'gmarik/Vundle.vim'
+Bundle 'vim-scripts/indentpython.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Yggdroot/indentLine'
+Bundle 'tell-k/vim-autopep8'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'davidhalter/jedi-vim'
+Plugin 'mattn/emmet-vim'
+Bundle 'Valloric/YouCompleteMe'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -56,6 +57,7 @@ set backspace=indent,eol,start
 "set completeopt -=preview
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 set completeopt=longest,menu
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 "let g:ycm_auto_trigger=0
 inoremap <unique> <C-_> <C-X><C-O><C-P>
 
