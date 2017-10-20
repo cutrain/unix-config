@@ -15,6 +15,7 @@ sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-dev p
 $ef
 ct 36 "Downloading zsh config"
 sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp .zshrc ~/.zshrc
 $ef
 ct 36 "Config vim plugins"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
