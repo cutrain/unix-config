@@ -1,6 +1,10 @@
 # unix-config
-```zsh
-sudo apt-get install tmux
-sudo apt-get install zsh
-sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+This config will install the following tools & config them.
+- git
+- tmux
+- vim
+- python & python-pip
+RUN
+```bash
+./config.sh
 ```

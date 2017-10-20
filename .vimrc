@@ -2,8 +2,8 @@ set nocompatible              " required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -23,7 +23,7 @@ Bundle 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call vundle#end()
 filetype plugin indent on    " required
 
 set ruler
