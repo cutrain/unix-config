@@ -88,5 +88,5 @@ if ! pgrep -u $USER ssh-agent > /dev/null; then
 	ssh-agent > ~/.config/ssh-agent-thing
 	echo "ssh-agent started"
 fi
-eval $(<~./config/ssh-agent-thing) > /dev/null
+eval $(<~/.config/ssh-agent-thing) > /dev/null
 
