@@ -1,3 +1,4 @@
 #! /bin/bash
-ssserver -p 25 -k "password" -m aes-256-cfb
-# or `sserver -c /etc/shadowsocks.json`
+ssserver -c /etc/shadowsocks.json
+# or 
+# ssserver -p 25 -k "password" -m aes-256-cfb

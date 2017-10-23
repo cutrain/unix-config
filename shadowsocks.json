@@ -1,6 +1,6 @@
 {
 	"server":"*.*.*.*",
-	"password":"cutrain_vpn",
+	"password":"password",
 	"server_port":25,
 	"local_address":"127.0.0.1",
 	"local_port":1080,
