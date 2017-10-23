@@ -30,3 +30,4 @@ ct 36 "Configing YouCompleteMe..."
 doo cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe
 doo cd ~/.vim/bundle/YouCompleteMe/
 doo ./install.py --clang-completer
+doo pip install jedi
