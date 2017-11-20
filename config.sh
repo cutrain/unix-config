@@ -40,7 +40,7 @@ doo "npm install ref"
 # The following is installing the plugin YouCompleteMe, it will spend a lot of time, if you don't have enough time, delete it in .vimrc
 ct 33 "It's going to config YouCompleteMe, it will spend lots of time, you can stop it using Ctrl+C"
 cmt "Configing YouCompleteMe..."
-doo 'cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe'
+doo 'cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 doo 'cd ~/.vim/bundle/YouCompleteMe/'
 doo './install.py --clang-completer'
 doo 'pip install jedi'
