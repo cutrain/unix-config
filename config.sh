@@ -41,6 +41,7 @@ doo "npm install ref"
 ct 33 "It's going to config YouCompleteMe, it will spend lots of time, you can stop it using Ctrl+C"
 cmt "Configing YouCompleteMe..."
 doo 'cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+doo 'sudo apt-get install -y g++-5'
 doo 'cd ~/.vim/bundle/YouCompleteMe/'
 doo './install.py --clang-completer'
 doo 'pip install jedi'
