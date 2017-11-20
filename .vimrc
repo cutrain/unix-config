@@ -39,6 +39,8 @@ set smartindent
 set cindent
 set fileformat=unix
 
+color slate
+set t_Co=256
 
 set encoding=utf-8
 syntax on
@@ -59,6 +61,7 @@ set backspace=indent,eol,start
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 set completeopt=longest,menu
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_enable_diagnostic_highlighting = 0
 "let g:ycm_auto_trigger=0
 inoremap <unique> <C-_> <C-X><C-O><C-P>
 
