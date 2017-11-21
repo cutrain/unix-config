@@ -14,7 +14,8 @@ cmt() {
 	ct 36 $*
 }
 sudo ct 32 "start"
-doo "sudo apt-get install python-setuptools m2crypto"
+doo "sudo apt-get install -y python-setuptools m2crypto"
+doo "export LC_ALL=C"
 doo "pip install shadowsocks"
 doo "cp server_vpn.sh ~"
 doo "cp client_vpn.sh ~"
