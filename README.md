@@ -11,5 +11,4 @@ RUN
 ```
 
 NOTE
-- Q:My **YouCompleteMe** doesn't complete my include files?
-- A:You may change the ***.ycm_extra_conf.py***: '/usr/include/c++/5.4.0' into '/usr/incldue/c++/****'
+	most bashes need to change parameters
