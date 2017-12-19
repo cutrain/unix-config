@@ -1,0 +1,5 @@
+SQLAlchemy: 
+	mysql connection : mysql+mysqlconnector://name:passwd@address:port/dbname
+	sudo apt-get install libmysqlclient-dev
+	pip install mysql-connector-python
+

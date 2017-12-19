@@ -18,7 +18,7 @@ sudo ct 32 "start"
 
 cmt "Copy config files"
 doo "cp .tmux.conf ~"
-doo "cp .vimrc ~"
+doo "cp .vimrc_simple ~/.vimrc"
 
 cmt "Install workenv tools"
 doo "sudo apt-get install -y vim git tmux zsh curl python-dev python-pip"
