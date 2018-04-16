@@ -26,6 +26,7 @@ doo "sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-
 cmt "Downloading zsh config"
 doo 'sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 doo 'cp .zshrc ~/.zshrc'
+doo 'cp .zprofile ~/.zprofile'
 
 cmt "Config vim plugins"
 doo 'git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
