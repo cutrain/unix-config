@@ -23,6 +23,10 @@ doo "cp .vimrc ~"
 cmt "Install workenv tools"
 doo "sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-dev python3-dev python-pip python3-pip"
 doo "cp -r .pip ~"
+doo "git config --global user.email \"454615501@qq.com\""
+doo "git config --global user.name \"cutrain\""
+doo "git config --global core.editor vim"
+doo "git config --global push.default simple"
 
 cmt "Downloading zsh config"
 doo 'sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
