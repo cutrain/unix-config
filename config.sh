@@ -22,7 +22,7 @@ doo "cp .vimrc ~"
 
 cmt "Install workenv tools"
 doo "sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-dev python3-dev python-pip python3-pip"
-doo "cp .pip ~"
+doo "cp -r .pip ~"
 
 cmt "Downloading zsh config"
 doo 'sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
