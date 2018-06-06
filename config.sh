@@ -21,7 +21,7 @@ doo "cp .tmux.conf ~"
 doo "cp .vimrc ~"
 
 cmt "Install workenv tools"
-doo "sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-dev python3-dev python-pip python3-pip"
+doo "sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-dev python3-dev python-pip python3-pip autojump"
 doo "cp -r .pip ~"
 doo "git config --global user.email \"454615501@qq.com\""
 doo "git config --global user.name \"cutrain\""

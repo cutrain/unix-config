@@ -90,3 +90,6 @@ if ! pgrep -u $USER ssh-agent > /dev/null; then
 fi
 eval $(<~/.config/ssh-agent-thing) > /dev/null
 
+alias vn='source venv/bin/activate'
+
+[[ -s /usr/share/autojump/autojump.zsh ]] && . /usr/share/autojump/autojump.zsh
