@@ -1,0 +1,6 @@
+#! /bin/bash
+while true
+do
+	/home/cutrain/tools/fd-net-auth.sh
+	sleep 600
+done
