@@ -31,7 +31,7 @@ doo 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/to
 
 cmt 'setting zsh'
 doo 'cp ./config/zsh/.zshrc ~/.zshrc'
-doo 'cp ./configzsh/.zprofile ~/.zprofile'
+doo 'cp ./config/zsh/.zprofile ~/.zprofile'
 
 cmt 'Config vim plugins'
 doo 'git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
