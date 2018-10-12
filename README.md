@@ -1,9 +1,9 @@
 # unix-config
-### This config will install the following tools & config them.
-- git
-- tmux
-- vim
-- python & python-pip
+### BEFORE YOU START SETTING
+check the following packages already installed
+```bash
+./basic.sh
+```
 
 ### RUN
 ```bash
@@ -15,6 +15,8 @@
 
 ## Q&A (unix problem)
 ### system
+#### how to set default bash?
+- chsh -s /bin/zsh
 #### how to install software when I don't have root authority?
 - apt-get source <software name>
 - tar zxvf <software zip bag> (or any other command)

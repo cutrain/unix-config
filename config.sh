@@ -14,14 +14,11 @@ cmt() {
 	ct 36 $*
 }
 
-sudo ct 32 "start"
-cmt 'Install basic tools'
-doo 'sudo apt-get install -y vim git tmux zsh curl build-essential cmake python-dev python3-dev python-pip python3-pip autojump g++-7'
 
 cmt 'Copy config files'
-doo 'cp tmux/.tmux.conf ~'
-doo 'cp vim/.vimrc ~'
-doo 'cp -r pip/.pip ~'
+doo 'cp ./config/tmux/.tmux.conf ~'
+doo 'cp ./config/vim/.vimrc ~'
+doo 'cp -r ./config/pip/.pip ~'
 
 cmt 'config git'
 doo 'git config --global user.email "454615501@qq.com"'
@@ -33,9 +30,8 @@ cmt 'Downloading zsh config'
 doo 'sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 
 cmt 'setting zsh'
-doo 'cp zsh/.zshrc ~/.zshrc'
-doo 'cp zsh/.zprofile ~/.zprofile'
-doo 'chsh -s /bin/zsh'
+doo 'cp ./config/zsh/.zshrc ~/.zshrc'
+doo 'cp ./configzsh/.zprofile ~/.zprofile'
 
 cmt 'Config vim plugins'
 doo 'git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
@@ -46,7 +42,7 @@ doo 'wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.
 
 ct 33 'Install YouCompleteMe'
 cmt 'Configing YouCompleteMe...'
-doo 'cp .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+doo 'cp ./config/vim/.ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 doo 'cd ~/.vim/bundle/YouCompleteMe/'
 doo 'python3 install.py --clang-completer'
 doo 'pip3 install jedi'
