@@ -27,7 +27,7 @@ doo 'git config --global core.editor vim'
 doo 'git config --global push.default simple'
 
 cmt 'Downloading zsh config'
-doo 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+doo 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" <<< exit'
 
 cmt 'setting zsh'
 doo 'cp ./config/zsh/.zshrc ~/.zshrc'
