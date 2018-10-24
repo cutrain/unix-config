@@ -37,12 +37,3 @@ cmt 'Config vim plugins'
 doo 'git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
 doo 'vim -c BundleInstall -c qa ~/.vimrc'
 
-cmt 'Config node denpency'
-doo 'wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash'
-
-ct 33 'Install YouCompleteMe'
-cmt 'Configing YouCompleteMe...'
-doo 'cp ./config/vim/.ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-doo 'cd ~/.vim/bundle/YouCompleteMe/'
-doo 'python3 install.py --clang-completer'
-doo 'pip3 install jedi'

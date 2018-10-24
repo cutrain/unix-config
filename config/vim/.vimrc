@@ -19,7 +19,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
 Bundle 'docunext/closetag.vim'
-Bundle 'Valloric/YouCompleteMe'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
