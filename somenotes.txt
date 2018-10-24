@@ -3,3 +3,7 @@ SQLAlchemy:
 	sudo apt-get install libmysqlclient-dev
 	pip install mysql-connector-python
 
+
+global shadowsocks:
+   https://www.jianshu.com/p/41378f4e14bc
+
