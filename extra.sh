@@ -26,7 +26,7 @@ doo 'pip3 install jedi'
 cmt 'Config shadowsocks client'
 doo 'pip3 install shadowsocks'
 doo 'mkdir -p ~/local/bin'
-doo 'cp ./config/proxy/server_vpn.sh ./config/proxy/client_vpn.sh ~/local/bin'
-doo 'cp ./config/proxy/shadowsocks.json ~/.shadowsocks.json'
+doo 'cp ./config/proxy/ss_client ./config/proxy/ss_server ~/local/bin'
+doo 'cp ./config/proxy/.shadowsocks.json ~/.shadowsocks.json'
 
 
