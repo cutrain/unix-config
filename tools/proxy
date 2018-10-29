@@ -1,6 +1,0 @@
-#! /bin/bash
-while true
-do
-	/home/cutrain/tools/client_vpn.sh
-	sleep 1
-done

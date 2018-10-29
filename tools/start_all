@@ -1,6 +1,0 @@
-#!/bin/bash
-./internet
-./proxy
-ngrok start ssh
-ngrok start lab
-ngrok start web
