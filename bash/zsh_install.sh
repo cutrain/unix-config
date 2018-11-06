@@ -16,7 +16,8 @@ cmt() {
 
 cmt 'download ncurses'
 doo 'wget ftp://ftp.invisible-island.net/ncurses/ncurses.tar.gz'
-doo 'tar -zxvf ncurses.tar.gz'
+doo 'mkdir ncurses'
+doo 'tar -zxvf ncurses.tar.gz -C ncurses --strip-components 1'
 doo 'cd ncurses'
 doo 'export CXXFLAGS='"'"' -fPIC'"'"
 doo 'export CFLAGS='"'"' -fPIC'"'"
