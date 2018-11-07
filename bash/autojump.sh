@@ -1,14 +1,14 @@
-#!/bin/bash
+#!env zsh
 ct() {
 	echo -ne "\033[$1;1m"
 	echo -n $2
 	echo -e "\033[0m"
 }
-ef="ct 32 Succeed"
-er="ct 31 Failed"
+ef=`ct 32 Succeed`
+er=`ct 31 Failed`
 doo() {
 	ct 33 "running '$*'"
-	eval "$*" && $ef || $er
+	eval "$*" && echo $ef || echo $er
 }
 cmt() {
 	ct 36 $*
