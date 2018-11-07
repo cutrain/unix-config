@@ -92,4 +92,4 @@ eval $(<~/.config/ssh-agent-thing) > /dev/null
 
 alias vn='source venv/bin/activate'
 
-[[ -s /usr/share/autojump/autojump.zsh ]] && . /usr/share/autojump/autojump.zsh
+export PATH=~/.local/bin:$PATH

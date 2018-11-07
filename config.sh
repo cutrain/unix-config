@@ -33,9 +33,6 @@ cmt 'setting zsh'
 doo 'cp ./config/zsh/.zshrc ~/.zshrc'
 doo 'cp ./config/zsh/.zprofile ~/.zprofile'
 
-cmt 'config PATH'
-doo 'echo "export PATH=~/.local/bin:\$PATH" >> ~/.zshrc'
-
 cmt 'Config vim plugins'
 doo 'git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
 doo 'vim -c BundleInstall -c qa ~/.vimrc'
