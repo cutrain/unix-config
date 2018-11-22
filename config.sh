@@ -21,7 +21,7 @@ doo 'cp ./config/vim/.vimrc ~'
 doo 'cp -r ./config/pip/.pip ~'
 
 cmt 'config git'
-doo 'git config --global user.email "454615501@qq.com"'
+doo 'git config --global user.email "duanyuge@qq.com"'
 doo 'git config --global user.name "cutrain"'
 doo 'git config --global core.editor vim'
 doo 'git config --global push.default simple'
