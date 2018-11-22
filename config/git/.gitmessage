@@ -1,0 +1,22 @@
+
+# head: <type>(<scope>): <subject>
+# - type: feat, fix, docs, style, refactor, perf, test, chore
+# feat:      A new feature
+# fix:       A bug fix
+# docs:      Documentation only changes
+# style:     Changes that do not affect the meaning of the code
+#            (white-space, formatting, missing semi-colons, etc)
+# refactore: A code change that neither fixes a bug or adds a feature
+# perf:      A code change that improves performance
+# test:      Adding missing tests
+# chore:     Changes to the build process or auxiliary tools
+#            and libraries such as documentation generation
+#
+# body: this should answer:
+# * Why was this change necessary?
+# * How does it address the problem?
+# * Are there any side effects?
+#
+# footer:
+# - Include a link to the ticket, if any
+# - Breaking change

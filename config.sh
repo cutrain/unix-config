@@ -21,10 +21,8 @@ doo 'cp ./config/vim/.vimrc ~'
 doo 'cp -r ./config/pip/.pip ~'
 
 cmt 'config git'
-doo 'git config --global user.email "duanyuge@qq.com"'
-doo 'git config --global user.name "cutrain"'
-doo 'git config --global core.editor vim'
-doo 'git config --global push.default simple'
+doo 'cp ./config/git/.gitconfig ~'
+doo 'cp ./config/git/.gitmessage ~'
 
 cmt 'Downloading zsh config'
 doo 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" <<< exit'

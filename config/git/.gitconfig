@@ -1,0 +1,9 @@
+[user]
+	email = duanyuge@qq.com
+	name = cutrain
+[core]
+	editor = vim
+[push]
+	default = simple
+[commit]
+	template = ~/.gitmessage
