@@ -2,12 +2,12 @@
 export PATH=/usr/local/bin:$PATH
 MYHOME=/home/cutrain
 LOGDIR=/usr/local/log
-nohup $MYHOME/tools/internet >> $LOGDIR/internet 2&>1 &
-nohup $MYHOME/tools/start_avday.sh >> $LOGDIR/start_avday 2&>1 &
-nohup sslocal -c /etc/shadowsocks.json >> $LOGDIR/proxy_client 2&>1 &
-nohup ssserver -c /etc/shadowsocks_server.json >> $LOGDIR/proxy_server 2&>1 &
-nohup ngrok -config $MYHOME/.ngrok start ssh >> $LOGDIR/ngrok_ssh 2&>1 &
-nohup ngrok -config $MYHOME/.ngrok start lab >> $LOGDIR/ngrok_lab 2&>1 &
-nohup ngrok_speed -config $MYHOME/.ngrok_speed start ssh >> $LOGDIR/ngrok_speed_ssh 2&>1 &
+nohup $MYHOME/tools/internet >> $LOGDIR/internet &
+nohup $MYHOME/tools/start_avday.sh >> $LOGDIR/start_avday &
+nohup sslocal -c /etc/shadowsocks.json >> $LOGDIR/proxy_client &
+nohup ssserver -c /etc/shadowsocks_server.json >> $LOGDIR/proxy_server &
+nohup ngrok -config $MYHOME/.ngrok start ssh >> $LOGDIR/ngrok_ssh &
+nohup ngrok -config $MYHOME/.ngrok start lab >> $LOGDIR/ngrok_lab &
+nohup ngrok_speed -config $MYHOME/.ngrok_speed start ssh >> $LOGDIR/ngrok_speed_ssh &
 
 exit 0
