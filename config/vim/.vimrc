@@ -19,7 +19,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'docunext/closetag.vim'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'cutrain/vim-gitgutter'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -86,7 +86,4 @@ map <F4> <leader>ci <CR>
 "GitGutter
 "git diff with a specific version
 "let g:gitgutter_diff_base = '<commit SHA>'
-"off realtime update & sign when save file
-autocmd! gitgutter CursorHold,CursorHoldI
-autocmd BufWritePost * GitGutter
 
