@@ -9,16 +9,17 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Bundle 'gmarik/Vundle.vim'
-Bundle 'vim-scripts/indentpython.vim'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Yggdroot/indentLine'
-Bundle 'tell-k/vim-autopep8'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'davidhalter/jedi-vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Yggdroot/indentLine'
+Plugin 'tell-k/vim-autopep8'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
-Bundle 'docunext/closetag.vim'
+Plugin 'docunext/closetag.vim'
+Plugin 'airblade/vim-gitgutter'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -81,3 +82,11 @@ let g:autopep8_disable_show_diff=1
 
 "auto-pairs nerdcommenter
 map <F4> <leader>ci <CR>
+
+"GitGutter
+"git diff with a specific version
+"let g:gitgutter_diff_base = '<commit SHA>'
+"off realtime update & sign when save file
+autocmd! gitgutter CursorHold,CursorHoldI
+autocmd BufWritePost * GitGutter
+
