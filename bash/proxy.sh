@@ -1,18 +1,6 @@
 #! /bin/bash
-ct() {
-	echo -ne "\033[$1;1m"
-	echo -n $2
-	echo -e "\033[0m"
-}
-ef="ct 32 Succeed"
-er="ct 31 Failed"
-doo() {
-	ct 33 "running '$*'"
-	eval "$*" && $ef || $er
-}
-cmt() {
-	ct 36 $*
-}
+source ../tools/common/sh
+
 sudo ct 32 "start"
 doo "sudo apt-get install -y python-setuptools m2crypto"
 doo "export LC_ALL=C"
