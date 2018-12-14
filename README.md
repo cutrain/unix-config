@@ -1,17 +1,14 @@
 # unix-config
-### BEFORE YOU START SETTING
-check the following packages already installed
+### Dependency
+Install some software by command "apt-get"
 ```bash
-./basic.sh
+./basic.sh # you need sudo authority
 ```
 
-### RUN
+### Start configure tmux/vim/zsh/git
 ```bash
 ./config.sh
 ```
-
-### NOTE
-	most bashes need to change parameters
 
 ## Q&A (unix problem)
 ### system
@@ -21,7 +18,7 @@ check the following packages already installed
 - apt-get source <software name>
 - tar zxvf <software zip bag> (or any other command)
 - cd <software dir>
-- ./config --prefix /path/to/your/dir (there may be some other params)
+- ./configure --prefix /path/to/your/dir (there may be some other params)
 - make && make install
 
 #### how to set system library enviroment?
