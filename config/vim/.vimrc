@@ -32,10 +32,15 @@ set number
 set st=4
 set ts=4
 set sw=4
-au BufNewFile,BufRead *py
+au BufNewFile,BufRead *py,*.html,*.css,*.js
 			\ set expandtab
+au BufNewFile,BufRead *.html,*.css,*.js
+			\ set sw=2
+			\ ts=2
+			\ st=2
 set autoindent
 set smartindent
+set smarttab
 set cindent
 set fileformat=unix
 
