@@ -29,7 +29,7 @@ filetype plugin indent on    " required
 
 set ruler
 set number
-set st=4
+set sts=4
 set ts=4
 set sw=4
 au BufNewFile,BufRead *py,*.html,*.css,*.js
