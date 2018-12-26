@@ -93,3 +93,7 @@ eval $(<~/.config/ssh-agent-thing) > /dev/null
 alias vn='source venv/bin/activate'
 
 export PATH=~/.local/bin:$PATH
+
+d(){
+	cd $1 && ls
+}
