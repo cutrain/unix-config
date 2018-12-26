@@ -94,6 +94,6 @@ alias vn='source venv/bin/activate'
 
 export PATH=~/.local/bin:$PATH
 
-d(){
+f(){
 	cd $1 && ls
 }
