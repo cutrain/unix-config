@@ -2,6 +2,9 @@
 export PATH=/usr/local/bin:$PATH
 MYHOME=/home/cutrain
 LOGDIR=/usr/local/log
+if [ ! -d $LOGDIR ];then
+	mkdir $LOGDIR
+fi
 nohup $MYHOME/tools/internet >> $LOGDIR/internet &
 nohup $MYHOME/tools/start_avday.sh >> $LOGDIR/start_avday &
 nohup sslocal -c /etc/shadowsocks.json >> $LOGDIR/proxy_client &
