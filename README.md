@@ -10,6 +10,12 @@ Install some software by command "apt-get"
 ./config.sh
 ```
 
+### Install YouCompleteMe & shadowsock
+```bash
+./extra.sh
+sudo apt-get install g++-7 # if failed, try g++-5 and change ./config/vim/.ycm_extra_conf.py where "g++/7" -> "g++/5"
+```
+
 ## Q&A (unix problem)
 ### system
 #### how to set default bash?
