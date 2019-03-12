@@ -37,3 +37,7 @@ sudo apt-get install g++-7 # if failed, try g++-5 and change ./config/vim/.ycm_e
 
 #### how to install python package if I'm not root?
 - pip install <package> --user
+
+#### shadowsocks Error: undefined symbol: EVP_CIPHER_CTX_cleanup?
+- find python\*/site-packages/shadowsocks/crypto/openssl.py
+- change libcrypto.EVP_CIPHER_CTX_*cleanup* -> libcrypto.EVP__CIPHER_CTX_*reset*
