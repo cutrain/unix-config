@@ -9,6 +9,11 @@ Install some software by command "apt-get"
 ```bash
 ./config.sh
 ```
+remember to change your github email & username
+```
+git config --global user.email="YourEmail@gmail.com"
+git config --global user.user="YourUserName"
+```
 
 ### Install YouCompleteMe & shadowsock
 ```bash
