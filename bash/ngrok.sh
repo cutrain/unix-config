@@ -10,8 +10,8 @@ doo 'sudo ln -s /usr/lib/go-1.10/bin/go /usr/bin/go'
 doo 'git clone https://github.com/inconshreveable/ngrok.git ngrok'
 doo 'cd ngrok'
 
-# NOTE: change the domain
-doo 'NGROK_DOMAIN="ngrok.cutrain.top"'
+echo -n 'input your domain:'
+read NGROK_DOMAIN
 
 doo 'openssl genrsa -out base.key 2048'
 doo 'openssl req -new -x509 -nodes -key base.key -days 10000 -subj "/CN=$NGROK_DOMAIN" -out base.pem'
@@ -28,8 +28,9 @@ doo 'mkdir -p ~/.ngrok'
 doo 'cp server.key ~/.ngrok'
 doo 'cp server.crt ~/.ngrok'
 
-doo 'touch start_ngrok'
 doo 'echo "sudo /usr/local/bin/ngrokd -tlsKey=$HOME/.ngrok/server.key -tlsCrt=$HOME/.ngrok/server.crt -domain=$NGROK_DOMAIN -httpAddr=\":8081\" -httpsAddr=\":8082\""'
+doo 'cd ..'
+doo 'echo "sudo /usr/local/bin/ngrokd -tlsKey=$HOME/.ngrok/server.key -tlsCrt=$HOME/.ngrok/server.crt -domain=$NGROK_DOMAIN -httpAddr=\":8081\" -httpsAddr=\":8082\"" > start_ngrok'
 
 
 echo "Please copy '/usr/local/bin/ngrok' into your client"
