@@ -9,6 +9,7 @@ doo 'cp -r ./config/pip/.pip ~'
 cmt 'config git'
 doo 'cp ./config/git/.gitconfig ~'
 doo 'cp ./config/git/.gitmessage ~'
+cmt 'remember to change your github email & username by {git config --global user.email="YourEmail@gmail.com"} & {git config --global user.user="YourUserName"}'
 
 cmt 'Installing zsh'
 if [ ! -e ~/.oh-my-zsh ] ;then
