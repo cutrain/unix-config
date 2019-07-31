@@ -1,6 +1,8 @@
 #!/bin/bash
 source ../tools/common.sh
 
+echo -n 'input your domain:'
+read NGROK_DOMAIN
 # NOTE: should use >= go-1.7.0
 doo 'sudo apt-get install -y git build-essential golang-1.10 mercurial'
 doo 'export GOROOT=/usr/lib/go-1.10'
@@ -9,9 +11,6 @@ doo 'sudo ln -s /usr/lib/go-1.10/bin/go /usr/bin/go'
 
 doo 'git clone https://github.com/inconshreveable/ngrok.git ngrok'
 doo 'cd ngrok'
-
-echo -n 'input your domain:'
-read NGROK_DOMAIN
 
 doo 'openssl genrsa -out base.key 2048'
 doo 'openssl req -new -x509 -nodes -key base.key -days 10000 -subj "/CN=$NGROK_DOMAIN" -out base.pem'
