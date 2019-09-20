@@ -6,5 +6,7 @@
 	"local_port":1080,
 	"timeout":300,
 	"method":"aes-256-cfb",
-	"fast-open":true
+	"fast-open":true,
+  "plugin":"~/.local/bin/gq-server",
+  "plugin_opts":"~/.gq_server.json"
 }
