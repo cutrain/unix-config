@@ -21,6 +21,7 @@ doo "(echo $PATH | grep "$HOME/.local/bin") || (mkdir -p $INSTALL_DIR && (echo '
 doo "cp ../config/proxy/ss_client $INSTALL_DIR"
 doo "cp ../config/proxy/gq_client $INSTALL_DIR"
 doo "vim -c '%s/ADDRESS=.*/ADDRESS=$ADDRESS' -c 'wq' $INSTALL_DIR/gq_client"
+doo "vim -c '%s/PORT=.*/PORT=$PORT' -c 'wq' $INSTALL_DIR/gq_client"
 
 doo "cp ../config/proxy/.shadowsocks_client.json $HOME"
 doo "vim -c '%s/\"server\":\\\".*\\\"/\"server\":\"$ADDRESS\"' -c 'wq' $HOME/.shadowsocks_client.json"

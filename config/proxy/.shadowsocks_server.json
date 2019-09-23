@@ -1,7 +1,7 @@
 {
   "server":"0.0.0.0",
   "password":"password",
-  "server_port":25,
+  "server_port":8388,
   "timeout":300,
   "method":"aes-256-cfb",
   "fast-open":true

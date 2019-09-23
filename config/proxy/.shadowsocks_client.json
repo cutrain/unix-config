@@ -1,7 +1,7 @@
 {
-  "server":"*.*.*.*",
+  "server":"192.168.0.1",
   "password":"password",
-  "server_port":25,
+  "server_port":8388,
   "local_address":"127.0.0.1",
   "local_port":1080,
   "timeout":300,

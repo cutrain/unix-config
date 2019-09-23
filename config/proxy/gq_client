@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ADDRESS=
-gq-client -s $ADDRESS -l 1984 -c ~/.gq_client.json
+ADDRESS=192.168.0.1
+PORT=8388
+gq-client -s $ADDRESS -l 1984 -p $PORT -c ~/.gq_client.json
