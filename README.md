@@ -21,6 +21,27 @@ git config --global user.user="YourUserName"
 sudo apt-get install g++-7 # if failed, try g++-5 and change ./config/vim/.ycm_extra_conf.py where "g++/7" -> "g++/5"
 ```
 
+### Shadowsocks usage
+#### For server
+```bash
+./bash/proxy_server.sh
+# After installation
+gq_server
+ss_server
+```
+#### For client
+```bash
+./bash/proxy_client.sh
+# After installation
+gq_client
+ss_client
+```
+#### While running 'ss_client' or 'ss_server': "undefined symbol: EVP_CIPHER_CTX_cleanup" ?
+Running fix bash
+```bash
+./bash/shadowsocks_fix.sh
+```
+
 ## Q&A (unix problem)
 ### system
 #### how to set default bash?
