@@ -1,0 +1,7 @@
+{
+  "ServerName":"www.baidu.com",
+  "Key":"1Q2W3E4R5T6Y7U8I9O",
+  "TicketTimeHint":3600,
+  "Browser":"chrome",
+  "FastOpen":true
+}

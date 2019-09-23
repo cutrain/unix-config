@@ -1,4 +1,4 @@
-#! /bin/bash
-ssserver -c ~/.shadowsocks_server.json
+#!/usr/bin/env bash
+ssserver -c ~/.shadowsocks_server.json -s 127.0.0.1 -p 8388
 # or 
 # ssserver -p 25 -k "password" -m aes-256-cfb

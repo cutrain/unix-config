@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+ADDRESS=
+gq-client -s $ADDRESS -l 1984 -c ~/.gq_client.json

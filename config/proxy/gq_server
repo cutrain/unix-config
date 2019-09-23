@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+gq-server -r 127.0.0.1:8388 -c ~/.gq_server.json

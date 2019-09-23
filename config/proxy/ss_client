@@ -1,4 +1,4 @@
-#! /bin/bash
-sslocal -c ~/.shadowsocks_client.json
+#!/usr/bin/env bash
+sslocal -c ~/.shadowsocks_client.json -s 127.0.0.1 -p 1984 -l 1080
 # or
 # sslocal -s $server_ip -k "password" -p 25 -l 1080 -t 300 -m aes-256-cfb --fast-open
