@@ -2,8 +2,15 @@
 source ../tools/common.sh
 
 INSTALL_DIR=$HOME/.local/bin
-BASH_FILE=$HOME/.zshrc
-cmt 'If you do not use zsh, please change the bash config file before you execute'
+if [[ "$(echo $SHELL | grep 'zsh')" != "" ]]
+then
+	cmt 'using zsh'
+	BASH_FILE=$HOME/.zshrc
+elif [[ $(echo $SHELL | grep 'bash') != "" ]]
+then
+	cmt 'using bash'
+	BASH_FILE=$HOME/.bashrc
+fi
 
 #sudo colorText $Yellow "start"
 #doo 'sudo apt-get install -y python-setuptools m2crypto'
