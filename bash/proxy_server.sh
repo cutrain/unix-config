@@ -12,16 +12,22 @@ then
 	BASH_FILE=$HOME/.bashrc
 fi
 
-#sudo colorText $Yellow "start"
-#doo 'sudo apt-get install -y python-setuptools m2crypto'
-#doo 'export LC_ALL=C'
 echo -n "input your proxy password:"
 read -s PASSWORD
 echo ''
 echo -n "input your proxy port:"
 read PORT
 
-doo 'pip install shadowsocks'
+if [[ `command -v ssserver` ]]; then
+	if [[ `command -v pip` ]]; then
+		if [[ `command -v python` ]]; then
+			doo 'sudo apt-get install python-dev'
+		fi
+		doo 'sudo apt-get install python-pip'
+	fi
+	doo 'pip install shadowsocks'
+fi
+
 doo "(echo $PATH | grep "$HOME/.local/bin") || (mkdir -p $INSTALL_DIR && (echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_FILE))"
 doo "cp ../config/proxy/ss_server $INSTALL_DIR"
 doo "cp ../config/proxy/gq_server $INSTALL_DIR"
