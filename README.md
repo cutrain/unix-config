@@ -18,7 +18,7 @@ git config --global user.user="YourUserName"
 ### Install YouCompleteMe & shadowsock
 ```bash
 ./extra.sh
-sudo apt-get install g++-7 # if failed, try g++-5 and change ./config/vim/.ycm_extra_conf.py where "g++/7" -> "g++/5"
+sudo apt-get install g++-7 # if failed, try g++-5 and change ./config/vim/.ycm_extra_conf.py where "c++/7" -> "c++/5", also change "-std=c++17" -> "-std=c++11"
 ```
 
 ### Shadowsocks usage
