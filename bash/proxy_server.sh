@@ -28,7 +28,7 @@ if [[ `command -v ssserver` ]]; then
 	doo 'pip install shadowsocks'
 fi
 
-doo "(echo $PATH | grep "$HOME/.local/bin") || (mkdir -p $INSTALL_DIR && (echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_FILE))"
+doo "(echo $PATH | grep $INSTALL_DIR) || (mkdir -p $INSTALL_DIR && (echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_FILE))"
 doo "cp ../config/proxy/ss_server $INSTALL_DIR"
 doo "cp ../config/proxy/gq_server $INSTALL_DIR"
 doo "vim -c '%s/PORT=.*/PORT=$PORT' -c 'wq' $INSTALL_DIR/gq_server"
