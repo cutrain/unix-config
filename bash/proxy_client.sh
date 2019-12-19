@@ -20,14 +20,21 @@ echo ''
 echo -n "input your proxy port:"
 read PORT
 
+if [[ `command -v python` ]]; then
+	echo "Already have python"
+else
+	doo 'sudo apt-get install python-dev'
+fi
+
+if [[ `command -v pip` ]]; then
+	echo "Already have pip"
+else
+	doo 'sudo apt-get install python-pip'
+fi
 
 if [[ `command -v sslocal` ]]; then
-	if [[ `command -v pip` ]]; then
-		if [[ `command -v python` ]]; then
-			doo 'sudo apt-get install python-dev'
-		fi
-		doo 'sudo apt-get install python-pip'
-	fi
+	echo "Already have shadowsocks"
+else
 	doo 'pip install shadowsocks'
 fi
 
