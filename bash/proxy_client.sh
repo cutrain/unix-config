@@ -31,7 +31,8 @@ if [[ `command -v sslocal` ]]; then
 	doo 'pip install shadowsocks'
 fi
 
-doo "(echo $PATH | grep $INSTALL_DIR) || (mkdir -p $INSTALL_DIR && (echo 'export PATH=$INSTALL_DIR:$PATH' >> $BASH_FILE))"
+doo "mkdir -p $INSTALL_DIR"
+doo "(echo $PATH | grep $INSTALL_DIR) || (echo 'export PATH=$INSTALL_DIR:$PATH' >> $BASH_FILE)"
 doo "cp ../config/proxy/ss_client $INSTALL_DIR"
 doo "cp ../config/proxy/gq_client $INSTALL_DIR"
 doo "vim -c '%s/ADDRESS=.*/ADDRESS=$ADDRESS' -c 'wq' $INSTALL_DIR/gq_client"

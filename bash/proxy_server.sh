@@ -2,6 +2,7 @@
 source ../tools/common.sh
 
 INSTALL_DIR=$HOME/.local/bin
+echo "INSTALL DIR $INSTALL_DIR"
 if [[ "$(echo $SHELL | grep 'zsh')" != "" ]]
 then
 	cmt 'using zsh'
@@ -27,8 +28,8 @@ if [[ `command -v ssserver` ]]; then
 	fi
 	doo 'pip install shadowsocks'
 fi
-
-doo "(echo $PATH | grep $INSTALL_DIR) || (mkdir -p $INSTALL_DIR && (echo 'export PATH=$INSTALL_DIR:$PATH' >> $BASH_FILE))"
+doo "mkdir -p $INSTALL_DIR"
+doo "(echo $PATH | grep $INSTALL_DIR) || (echo 'export PATH=$INSTALL_DIR:$PATH' >> $BASH_FILE)"
 doo "cp ../config/proxy/ss_server $INSTALL_DIR"
 doo "cp ../config/proxy/gq_server $INSTALL_DIR"
 doo "vim -c '%s/PORT=.*/PORT=$PORT' -c 'wq' $INSTALL_DIR/gq_server"
