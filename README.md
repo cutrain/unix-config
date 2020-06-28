@@ -21,6 +21,11 @@ git config --global user.user="YourUserName"
 sudo apt-get install g++-7 # if failed, try g++-5 and change ./config/vim/.ycm_extra_conf.py where "c++/7" -> "c++/5", also change "-std=c++17" -> "-std=c++11"
 ```
 
+### Go Completer
+copy config/vim/.go_vimrc to ~/.vimrc
+
+install vim>=8 with python3&timers enable
+
 ### Shadowsocks usage
 #### For server
 ```bash
