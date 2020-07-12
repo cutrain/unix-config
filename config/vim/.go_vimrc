@@ -31,6 +31,8 @@ else
 endif
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
+" speedup startup
+set clipboard=exclude:.*
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -41,7 +43,7 @@ set number
 set sts=4
 set ts=4
 set sw=4
-au BufNewFile,BufRead *go,*py,*.html,*.css,*.js
+au BufNewFile,BufRead *py,*.html,*.css,*.js
 			\ set expandtab
 au BufNewFile,BufRead *.html,*.css,*.js
 			\ set sw=2
@@ -102,7 +104,8 @@ map <F4> <leader>ci <CR>
 
 "deoplete
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 0
+autocmd InsertEnter * call deoplete#enable()
 
 "vim-go
 let g:go_highlight_types = 1
