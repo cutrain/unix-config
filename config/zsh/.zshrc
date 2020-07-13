@@ -83,12 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if ! pgrep -u $USER ssh-agent > /dev/null; then
-	[ -d ~/.config ] || mkdir -v ~/.config
-	ssh-agent > ~/.config/ssh-agent-thing
-	echo "ssh-agent started"
-fi
-eval $(<~/.config/ssh-agent-thing) > /dev/null
 
 alias vn='source venv/bin/activate'
 
