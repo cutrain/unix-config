@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'docunext/closetag.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'cutrain/vim-gitgutter'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 

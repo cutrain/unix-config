@@ -21,6 +21,7 @@ Plugin 'docunext/closetag.vim'
 Plugin 'cutrain/vim-gitgutter'
 Plugin 'fatih/vim-go', {'tag': '*'}
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'dgryski/vim-godef'
 if has('nvim')
 	Plugin 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
