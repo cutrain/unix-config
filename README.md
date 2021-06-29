@@ -72,3 +72,16 @@ Running fix bash
 #### shadowsocks Error: undefined symbol: EVP_CIPHER_CTX_cleanup?
 - find python\*/site-packages/shadowsocks/crypto/openssl.py
 - change libcrypto.EVP_CIPHER_CTX_*cleanup* -> libcrypto.EVP__CIPHER_CTX_*reset*
+
+#### build python3
+```bash
+./configure --enable-shared --enable-optimizations --prefix=/usr/local/python3
+make -j 4 && sudo make install
+```
+
+### vim
+#### build vim8
+```
+./configure --with-features=huge --enable-python3interp --with-python3-config-dir=$(python3-config --configdir) --enable-rubyinterp --enable-luainterp --enable-perlinterp --enable-fontset --enable-multibyte --enable-cscope --prefix=/usr/local/vim
+make -j 4 && sudo make install
+```
