@@ -35,6 +35,7 @@ doo 'curl -fsSL https://ollama.com/install.sh | sh'
 cmt 'install shell-gpt, using local ollama/llama3.1(8b)'
 doo 'pip install "shell-gpt[litellm]"'
 doo 'cp ./config/shell_gpt/.sgptrc ~/.config/shell_gpt/.sgptrc'
+doo "sed -i \"s|\\\$HOME|$HOME|g\" ~/.config/shell_gpt/.sgptrc"
 
 cmt 'download llama3.1 for ollama'
 doo 'ollama pull llama3.1'
